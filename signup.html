@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Signup Page</title>
+  </head>
+
+  <body align="center">
+    <center>
+      <h2 style="color: red">Please signup here!!!</h2>
+    </center>
+
+    <form onsubmit="return validateForm()">
+      Enter UserName:
+      <input type="text" id="username" />
+      <br /><br />
+
+      Enter Password:
+      <input type="password" id="password" />
+      <br /><br />
+
+      Confirm Password:
+      <input type="password" id="cpassword" />
+      <br /><br />
+
+      Select Gender:
+      <input type="radio" name="gender" value="Male" /> Male
+      <input type="radio" name="gender" value="Female" /> Female <br /><br />
+
+      Enter Mobile Number:
+      <input type="text" id="mobile" />
+      <br /><br />
+
+      Enter DOB:
+      <input type="date" id="dob" />
+      <br /><br />
+
+      Enter Address:
+      <textarea id="address" rows="4" cols="40"></textarea>
+      <br /><br />
+
+      Select Qualification:
+      <select id="qualification">
+        <option value="">Select</option>
+        <option>B.Tech</option>
+        <option>M.Tech</option>
+        <option>B.Sc</option>
+        <option>MCA</option>
+      </select>
+      <br /><br />
+
+      Choose your Skills:
+      <select multiple size="4">
+        <option>Java</option>
+        <option>HTML5</option>
+        <option>CSS3</option>
+        <option>JavaScript</option>
+      </select>
+      <br /><br />
+
+      Preferred Shift:
+      <input type="checkbox" /> DayShift <input type="checkbox" /> NightShift
+      <input type="checkbox" /> DayShift/NightShift <br /><br />
+
+      Upload your resume:
+      <input type="file" />
+      <br /><br />
+
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <script src="signup.js"></script>
+  </body>
+</html>
